@@ -8,6 +8,7 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
      <script type="text/javascript" src="csv.js"></script>
      <script type="text/javascript" src="main.js"></script>
+     <script src="jquery.js"></script>
      <script type="text/html" id='fillTable'>
        <table id="result" class="center">
          <% _.each(items, function(name) { %>
@@ -23,16 +24,24 @@
   <body>
     <h1>Comma Separated Value Analyzer</h1>
     <div>
-      <p><i> Go to the <a href="https://github.com/crguezl/csv">repo</a>.</i></p>
+      <p><i> Go to the <a href="https://github.com/alu0100821338/localstorage-jquery-underscore-express-sass-heroku-daniel-cristina/tree/gh-pages">repo</a>.</i></p>
       <i>Write a CSV string. Click the table button. The program outputs a table with the specified data.</i>
     </div>
     <table>
       <tr>
         <th>CSV string:</th> <!-- autofocus attribute is HTML5 -->
-        <td><textarea autofocus cols = "80" rows = "5" id="original"></textarea></td> 
+        <td><textarea autofocus cols = "80" rows = "5" id="original"></textarea></td>
       </tr>
     </table>
-    <button type="button">table:</button><br>
+    <button type="button">CSV con JQuery:</button><br>
+
     <span class="output" id="finaltable"></span>
+    <script>$( document ).ready(function() {
+        $( "button" ).click(function( event ) {
+            $( this ).hide( "slow" );
+            $("span").hide();
+            $("span").show(3000);
+        });
+    });</script>
   </body>
 </html>

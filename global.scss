@@ -1,0 +1,32 @@
+$font-s: 20px;
+$bg-color: #FF5050;
+$err-color: #73021A;
+$result-color: #2f2f2f;
+$white-color: #BFB3BC;
+$green: #6AD946;
+html *
+{
+   font-size: $font-s; 
+   /* The !important ensures that nothing can override what you've set in this style (unless it is also important). */
+   font-family: Arial;
+}
+
+h1            { text-align: center; font-size: x-$font-s; }
+th, td        { vertical-align: center; text-align: right; }   
+/* #finaltable  * { color: white; background-color: black; }   */
+
+/* #finaltable table { border-collapse:collapse; } */
+ #finaltable table, td { border:15px solid white; } 
+#finaltable:hover td { background-color: $white-color; } 
+tr:nth-child(odd)    { background-color:#eee; }
+tr:nth-child(even)    { background-color:$green;}
+input        { text-align: right;  border: none;       }     /* Align input to the right  */
+textarea     { border: outset; border-color: $white-color;       }                        
+table        { border: inset; border-color: $white-color; background-color:  $white-color}
+table.center { margin-left:auto; margin-right:auto; }
+#result      { border-color: $result-color; }
+tr.error       { background-color: $err-color; }
+body
+{
+background-color:$bg-color;  /* rosa */
+}
