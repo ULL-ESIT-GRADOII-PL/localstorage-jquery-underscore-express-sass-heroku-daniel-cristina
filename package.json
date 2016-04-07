@@ -4,7 +4,7 @@
   "description": "Ver analizador CSV: https://github.com/ULL-ESIT-GRADOII-PL/localstorage-jquery-underscore-express-sass-heroku-daniel-cristina",
   "main": "main.js",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start",
+    "test": "node_modules/karma/bin/karma start",
     "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o vendor/chai.js",
     "sinon": "curl http://sinonjs.org/releases/sinon-1.12.2.js -o vendor/sinon-1.12.2.js"
   },
@@ -13,6 +13,7 @@
     "url": "https://github.com/ULL-ESIT-GRADOII-PL/localstorage-jquery-underscore-express-sass-heroku-daniel-cristina"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^2.0.3",
@@ -29,7 +30,7 @@
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-sinon": "^1.0.4",
     "minimax": "*",
-    "mocha": "*",
+    "mocha": "^2.4.5",
     "optimist": "*",
     "sinon": "^1.17.3"
   },
