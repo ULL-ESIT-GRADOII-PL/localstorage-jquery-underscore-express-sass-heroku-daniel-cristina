@@ -47,5 +47,8 @@
   "bugs": {
     "url": "https://github.com/crguezl/mocha-chai-sinon--example/issues"
   },
-  "homepage": "https://github.com/crguezl/mocha-chai-sinon--example"
+  "homepage": "https://github.com/crguezl/mocha-chai-sinon--example",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
