@@ -8,7 +8,7 @@ module.exports = function(config) {
     frameworks: ['mocha', 'chai'],
 
     files: [
-      'test/tests.js',
+      'test/testCSV.js',
       'vendor/chai.js',
       'vendor/mocha.css',
       'vendor/mocha.js',
