@@ -13,7 +13,7 @@ For more information look at:
 
 **Repositorio GitHuB**
 
-* [Repositorio de trabajo del CSV](https://github.com/alu0100821338/localstorage-jquery-underscore-express-sass-heroku-daniel-cristina/tree/gh-pages)
+* [Repositorio de trabajo CSV](https://github.com/alu0100821338/localstorage-jquery-underscore-express-sass-heroku-daniel-cristina/tree/gh-pages)
 
 
 **Página de los autores**
