@@ -1,0 +1,74 @@
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <title>ANALIZADOR CSV </title>
+     <link href="global.css" rel="stylesheet" type="text/css">
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <script type="text/javascript" src="csv.js"></script>
+     <script type="text/javascript" src="main.js"></script>
+     <script src="jquery.js"></script>
+     <script type="text/html" id='fillTable'>
+       <table id="result" class="center">
+         <% _.each(items, function(name) { %>
+           <tr class="<%= name.rowClass %>">
+             <% _.each(name.value, function(cell) { %>
+               <td><%= cell %></td>
+             <% }); %>
+           </tr>
+         <% }); %>
+       </table>
+     </script>
+  </head>
+  <body>
+    <h1>ANALIZADOR CSV</h1>
+    <div>
+      <p><i> Información de la página en <a href="https://github.com/alu0100821338/localstorage-jquery-underscore-express-sass-heroku-daniel-cristina/tree/gh-pages">GitHub</a>.</i></p>
+      <i>Escribe una cadena de caracteres en formato CVS. el programa te devolverá una
+      tabla de reultados finales con los resultados especificos.</i>
+    </div>
+    <table>
+      <tr>
+        <th>CSV string:</th> <!-- autofocus attribute is HTML5 -->
+        <td><textarea autofocus cols = "80" rows = "5" id="original"></textarea></td>
+      </tr>
+    </table>
+    <button type="button">CSV con JQuery:</button><br>
+
+    <span class="output" id="finaltable"></span>
+    <script>$( document ).ready(function() {
+        $( "button" ).click(function( event ) {
+            $( this ).hide( "slow" );
+            $("span").hide();
+            $("span").show(3000);
+            $( this ).show( 5000 );
+        });
+    });</script>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="one-half column">
+            <a href="https://github.com/ULL-ESIT-GRADOII-PL/localstorage-jquery-underscore-express-sass-heroku-daniel-cristina">Repositorio del código</a>
+          </div>
+        </div>
+          <div class="row">
+          <div class="one-half column">
+            <a href="http://alu0100811933.github.io/">Web Daniel Daher</a>
+          </div>
+          <div class="one-half column">
+            <a href="http://alu0100821338.github.io/">Web Cristina Tosco</a>
+          </div>
+            <div class="row">
+              <div class="one-half column">
+                <a href="http://ull-esit-gradoii-pl.github.io/localstorage-jquery-underscore-express-sass-heroku-daniel-cristina/test.html">Test</a>
+              </div>
+            </div>
+        </div>
+      </div>
+  </footer>
+
+  </body>
+</html>
