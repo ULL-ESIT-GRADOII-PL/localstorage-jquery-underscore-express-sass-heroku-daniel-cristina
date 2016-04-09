@@ -1,1 +1,1 @@
-web: node csv/bin/www
+web: node bin/www

@@ -1,55 +1,17 @@
 {
-  "name": "localstorage-jquery-underscore-express-sass-heroku-daniel-cristina",
+  "name": "csv",
   "version": "0.0.0",
-  "description": "Ver analizador CSV: https://github.com/ULL-ESIT-GRADOII-PL/localstorage-jquery-underscore-express-sass-heroku-daniel-cristina",
-  "main": "main.js",
+  "private": true,
   "scripts": {
-    "test": "node_modules/karma/bin/karma start",
-    "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o vendor/chai.js",
-    "sinon": "curl http://sinonjs.org/releases/sinon-1.12.2.js -o vendor/sinon-1.12.2.js"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ULL-ESIT-GRADOII-PL/localstorage-jquery-underscore-express-sass-heroku-daniel-cristina"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
-    "gulp-clean-css": "^2.0.3",
-    "gulp-htmlmin": "^1.3.0",
-    "gulp-karma": "0.0.5",
-    "gulp-minify": "0.0.5",
-    "gulp-uglify": "^1.5.3",
-    "karma": "~0.12",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^0.2.3",
-    "karma-firefox-launcher": "^0.1.7",
-    "karma-html2js-preprocessor": "^0.1.0",
-    "karma-mocha": "^0.2.2",
-    "karma-phantomjs-launcher": "^1.0.0",
-    "karma-sinon": "^1.0.4",
-    "minimax": "*",
-    "mocha": "^2.4.5",
-    "optimist": "*",
-    "sinon": "^1.17.3"
-  },
-  "keywords": [
-    "mocha",
-    "chai",
-    "sinon",
-    "karma",
-    "testing",
-    "javascript"
-  ],
-  "author": "Daniel-y-Cristina",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/crguezl/mocha-chai-sinon--example/issues"
-  },
-  "homepage": "https://github.com/crguezl/mocha-chai-sinon--example",
   "dependencies": {
-    "cool-ascii-faces": "1.3.4",
-    "express": "^4.13.4"
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0"
   }
 }
